@@ -24,6 +24,8 @@ void linked_list_append(linked_list_t* list, void* val) {
 }
 
 void* linked_list_get(linked_list_t* list, int index) {
+    if (index < 0) return NULL;
+
     linked_list_t* buf = list;
     for (int i = 0; i < index; i++) {
         if (buf->next == NULL) return NULL;
