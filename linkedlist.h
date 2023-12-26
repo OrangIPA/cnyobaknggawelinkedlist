@@ -9,6 +9,10 @@ linked_list_t* linked_list_new(void* first_data);
 
 void linked_list_append(linked_list_t* list, void* val);
 
+void linked_list_insert(linked_list_t* list, void* val, int index);
+
 void* linked_list_get(linked_list_t* list, int index);
 
 int linked_list_remove(linked_list_t* list, int index);
+
+int linked_list_size(linked_list_t* list);
